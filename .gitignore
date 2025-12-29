@@ -1,32 +1,82 @@
-### IntelliJ IDEA ###
+# =========================
+# Build / Gradle
+# =========================
+.gradle/
+build/
 out/
+
+# =========================
+# IntelliJ IDEA
+# =========================
+.idea/
+*.iml
 !**/src/main/**/out/
 !**/src/test/**/out/
 
-### Kotlin ###
-.kotlin
+# =========================
+# Kotlin
+# =========================
+.kotlin/
 
-### Eclipse ###
+# =========================
+# Eclipse
+# =========================
 .apt_generated
 .classpath
 .factorypath
 .project
-.settings
+.settings/
 .springBeans
 .sts4-cache
 bin/
 !**/src/main/**/bin/
 !**/src/test/**/bin/
 
-### NetBeans ###
+# =========================
+# NetBeans
+# =========================
 /nbproject/private/
 /nbbuild/
 /dist/
 /nbdist/
 /.nb-gradle/
 
-### VS Code ###
+# =========================
+# VS Code
+# =========================
 .vscode/
 
-### Mac OS ###
+# =========================
+# Mac / OS junk
+# =========================
 .DS_Store
+Thumbs.db
+
+# =========================
+# Logs
+# =========================
+logs/
+*.log
+
+# =========================
+# Environment / Secrets
+# =========================
+.env
+application-local.yml
+application-dev.yml
+application-prod.yml
+
+# =========================
+# Database (never commit)
+# =========================
+*.db
+*.sqlite
+*.sqlite3
+
+# =========================
+# OS / Temp
+# =========================
+*.swp
+*.tmp
+*.temp
+*~
