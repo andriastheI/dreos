@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="eng">
+<head>
+    <meta charset="UTF-8"/>
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">    <title>DreOS • Login</title>
+    <link rel="stylesheet" th:href="@{/css/indexstyle.css}">
+</head>
+<body>
+<div class="login">
+    <img src="/imgResources/loginBackground.jpg" alt="Login Background">
+    <form action="" class="login_form">
+        <h1 class="login_title">Login</h1>
+
+        <div class="login_inputs">
+            <div class="login_box">
+                <input type="email" name="email" id="email" placeholder=" " class="login_input" required>
+                <label for="email" class="login_label">Email ID</label>
+                <i class="fa-solid fa-at"></i>
+            </div>
+            <div class="login_box">
+                <input type="password" name="password" id="password" placeholder=" " class="login_input" required>
+                <label for="password" class="login_label">Password</label>
+                <i class="fa-solid fa-lock"></i>
+            </div>
+        </div>
+        <div class="login_check">
+            <div class="login_check-box">
+                <input type="checkbox" name="checkbox" id="user-check" class="login_check-input">
+                <label for="user-check" class="login_check-label">Remember Me</label>
+            </div>
+            <a href="#" class="login_forgot">Forgot Password</a>
+        </div>
+
+        <button type="submit" class="login_button">Login</button>
+
+        <div class="login_register">
+            Don't have an account? <a href="#">Register</a>
+        </div>
+
+    </form>
+</div>
+</body>
+</html>
